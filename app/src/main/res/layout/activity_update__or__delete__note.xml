@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_Or_Delete_Note"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/update_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_note_description"
+        android:layout_marginTop="10dp"
+        android:hint="Description"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_note_date"
+        android:layout_marginTop="10dp"
+        android:hint="Date"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_note_time"
+        android:layout_marginTop="10dp"
+        android:hint="Time"></EditText>
+
+    <Button
+        android:id="@+id/update_note_updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/create_note_drawable"
+        android:onClick="onUpdateNoteClick"
+        android:text="Update Note"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/update_note_deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/create_note_drawable"
+        android:onClick="onDeleteNoteClick"
+        android:text="Delete Note"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+
+</LinearLayout>

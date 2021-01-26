@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="Hello Sheraz"
+            android:id="@+id/hello"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="Take Your Note Now"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/author"
+        android:layout_width="92dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/sheraz"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onAuthorClick"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="630dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="566dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:background="@color/white"></ListView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="277dp"
+            android:layout_marginBottom="155dp"
+            android:onClick="onClickAddNote"
+            android:src="@drawable/plus"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

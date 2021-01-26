@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Note"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_note_title"
+        android:hint="Title"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_note_description"
+        android:layout_marginTop="10dp"
+        android:hint="Description"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_note_date"
+        android:onClick="onDateClick"
+        android:hint="Select Date"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_note_time"
+        android:onClick="onTimeClickListener"
+        android:hint="Select Date"></EditText>
+
+    <Button
+        android:id="@+id/add_note_addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/create_note_drawable"
+        android:onClick="onCreateNoteClick"
+        android:text="Create Note"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/add_note_cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/create_note_drawable"
+        android:onClick="onCancelClick"
+        android:text="Cancel Note"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+
+</LinearLayout>

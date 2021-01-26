@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+            <TextView
+                android:id="@+id/title_of_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Prepare Note App"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/date_of_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="24/10/2020"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/description_of_notes"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:text="I should start my Note app Series on my page as soon as possible"></TextView>
+
+        <TextView
+            android:id="@+id/time_of_notes"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:text="8:20"
+            android:textSize="15sp"></TextView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
